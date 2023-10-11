@@ -26,8 +26,29 @@ ProjectCalculator/
 - **`README.md`**: Provides detailed information about the project, its structure, and setup instructions.
 - **`requirements.txt`**: Lists the necessary libraries and dependencies used in the project.
 
-
 ## Setup Instructions
+
+### Local setup
+
+1. Install requirements from **`requirements.txt`**
+
+2. In terminal run: 
+
+   ```bash
+   streamlit run app.py
+   ```
+
+3. Click on the link generated.
+
+4. Calculator Usage:
+
+   - Enter the first number.
+
+   - Select the desired arithmetic operation (addition, subtraction, multiplication, or division).
+
+   - Enter the second number.
+
+   - Click the "Calculate" button to see the result displayed.
 
 
 ### Docker Setup
