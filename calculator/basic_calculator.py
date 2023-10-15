@@ -1,4 +1,8 @@
-class Calculator:
+"""
+Implements the Calculator class with arithmetic operations
+"""
+
+class BasicCalculator:
     """
     A simple calculator class for basic arithmetic operations.
     """
@@ -20,7 +24,10 @@ class Calculator:
         Returns:
             int/float: Result of the addition.
         """
-        return a + b
+        try:
+            return a + b
+        except TypeError:
+            return "Invalid input. Both operands should be numbers."
 
     def subtract(self, a, b):
         """
@@ -33,7 +40,10 @@ class Calculator:
         Returns:
             int/float: Result of the subtraction.
         """
-        return a - b
+        try:
+            return a - b
+        except TypeError:
+            return "Invalid input. Both operands should be numbers."
 
     def multiply(self, a, b):
         """
@@ -46,7 +56,10 @@ class Calculator:
         Returns:
             int/float: Result of the multiplication.
         """
-        return a * b
+        try:
+            return a * b
+        except TypeError:
+            return "Invalid input. Both operands should be numbers."
 
     def divide(self, a, b):
         """
@@ -59,10 +72,13 @@ class Calculator:
         Returns:
             int/float/str: Result of the division or error message if b is 0.
         """
-        if b == 0:
-            return 'Cannot divide by zero'
-        else:
+        try:
             return a / b
+        except ZeroDivisionError:
+            return "Cannot divide by zero"
+        except TypeError as e:
+            raise e
+
 
 if __name__ == "__main__":
     pass

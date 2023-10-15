@@ -8,19 +8,20 @@ This project is a simple calculator that performs basic arithmetic operations, i
 
 ```
 ProjectCalculator/
-├── src/
+├── calculator/
 │   ├── __init__.py
-|   ├── test_calculator.py
-│   ├── build_calculator.py
-|
-├── Dockerfile
+│   ├── basic_calculator.py
+│   └── tests/
+│       ├── __init__.py
+│       └── test_basic_calculator.py
 ├── app.py
+├── Dockerfile
 ├── README.md
 └── requirements.txt
 ```
 
-- **`test_calculator.py`**: Contains unit tests for the calculator functions.
-- **`build_calculator.py`**: Implements the Calculator class with arithmetic operations.
+- **`test_basic_calculator.py`**: Contains unit tests for the calculator functions.
+- **`basic_calculator.py`**: Implements the BasicCalculator class with arithmetic operations.
 - **`Dockerfile`**: Contains instructions to build the Docker image for the calculator application.
 - **`app.py`**: Manages the Streamlit deployment of the calculator application.
 - **`README.md`**: Provides detailed information about the project, its structure, and setup instructions.
@@ -31,6 +32,10 @@ ProjectCalculator/
 ### Local setup
 
 1. Install requirements from **`requirements.txt`**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 
 2. In terminal run: 
 
